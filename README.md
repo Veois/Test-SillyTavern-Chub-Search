@@ -1,4 +1,10 @@
-# SillyTavern Chub Search
+# Worked version of SillyTavern Chub Search
+## What new?
+- 30 char cards on one page
+- fix page switching
+- fix cards download (thanks for this, fork "Fixed-SillyTavern-Chub-Search")
+- limit of 8 tags
+- full card description
 
 SillyTavern Chub Search is an which provides a quick and easy way to search for new cards from [CHUB](https://www.chub.ai/about) from the comfort of your tavern. 
 
