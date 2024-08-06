@@ -16,7 +16,7 @@ const API_ENDPOINT_SEARCH = "https://api.chub.ai/api/characters/search";
 const API_ENDPOINT_DOWNLOAD = "https://api.chub.ai/api/characters/download";
 
 const defaultSettings = {
-    findCount: 40,
+    findCount: 30,
     nsfw: false,
 };
 
@@ -260,7 +260,7 @@ function generateCharacterListItem(character, index) {
                  <span class="author">by ${character.author}</span>
                 </a></div>
                 <div class="description">${character.description}</div>
-                <div class="tags">${character.tags.slice(0, 5).map(tag => `<span class="tag">${tag}</span>`).join('')}</div>
+                <div class="tags">${character.tags.slice(0, 8).map(tag => `<span class="tag">${tag}</span>`).join('')}</div>
             </div>
             <div data-path="${character.fullPath}" class="menu_button download-btn fa-solid fa-cloud-arrow-down faSmallFontSquareFix"></div>
         </div>
