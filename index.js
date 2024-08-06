@@ -192,16 +192,18 @@ async function executeCharacterSearch(options) {
 function generateCharacterListItem(character, index) {
     return `
         <div class="character-list-item" data-index="${index}">
-            <img class="thumbnail" src="${character.url}">
+            <img class="thumbnail" src="${character.url}" alt="${character.name}">
             <div class="info">
-                <a href="https://chub.ai/characters/${character.fullPath}" target="_blank"><div class="name">${character.name || "Default Name"}</a>
-                <a href="https://chub.ai/users/${character.author}" target="_blank">
-                 <span class="author">by ${character.author}</span>
-                </a></div>
+                <div class="name">
+                    <a href="https://chub.ai/characters/${character.fullPath}" target="_blank">${character.name || "Default Name"}</a>
+                </div>
+                <div class="author">by <a href="https://chub.ai/users/${character.author}" target="_blank">${character.author}</a></div>
                 <div class="description">${character.description}</div>
                 <div class="tags">${character.tags.slice(0, 5).map(tag => `<span class="tag">${tag}</span>`).join('')}</div>
             </div>
-            <div data-path="${character.fullPath}" class="menu_button download-btn fa-solid fa-cloud-arrow-down faSmallFontSquareFix"></div>
+            <div class="download-container">
+                <div data-path="${character.fullPath}" class="menu_button download-btn fa-solid fa-cloud-arrow-down faSmallFontSquareFix"></div>
+            </div>
         </div>
     `;
 }
