@@ -138,7 +138,7 @@ function makeTagPermutations(tags) {
  */
 async function fetchCharactersBySearch({ searchTerm, includeTags, excludeTags, nsfw, sort, page=1 }) {
 
-    let first = extension_settings.chub.findCount;
+    let first = 30; // вместо extension_settings.chub.findCount
     let asc = false;
     let include_forks = true;
     nsfw = nsfw || extension_settings.chub.nsfw;  // Default to extension settings if not provided
