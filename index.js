@@ -230,8 +230,11 @@ function openSearchPopup() {
  * @returns {Promise<void>} - Resolves once the character list has been updated in the view.
  */
 async function executeCharacterSearch(options) {
-    let characters  = []
-    characters = await searchCharacters(options);
+    // Clear the previous search result first
+    chubCharacters = [];
+    updateCharacterListInView(chubCharacters);  // Resetting character list before fetching new characters
+
+    let characters  = await searchCharacters(options);
 
     if (characters && characters.length > 0) {
         console.log('Updating character list');
