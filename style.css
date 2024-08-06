@@ -52,11 +52,11 @@ body img.thumbnail {
 }
 
 .character-list-item .info .description {
-    color: #666;  /* Darkens the description text slightly */
-    white-space: nowrap;
+    color: #666;  /*Darkens the description text slightly*/
+    white-space: normal; /*Allows descriptions to wrap to multiple lines*/
     overflow: hidden;
-    text-overflow: ellipsis;  /* Ensures that long descriptions end in an ellipsis */
-    text-align: left;  /* aligns content to the left */
+    text-overflow: ellipsis;  /*Ensures that long descriptions end in an ellipsis*/
+    text-align: left;  /*aligns content to the left*/
 }
 
 .character-list-item .info .tags{
@@ -70,9 +70,15 @@ body img.thumbnail {
 }
 
 .page-buttons {
-    align-content: center;
+    display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.page-buttons input#pageNumber {
+    width: 50px; /*Reduce the width of the page number input*/
+    text-align: center; /*Center-align the input text*/
 }
 
 .list-and-search-wrapper .flex-container {
