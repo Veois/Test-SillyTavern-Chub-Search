@@ -73,12 +73,13 @@ body img.thumbnail {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 2px;
+    margin-top: 10px;
 }
 
 .page-buttons input#pageNumber {
-    width: 2px; /*Reduce the width of the page number input*/
+    width: 10px; /*Reduce the width of the page number input*/
     text-align: center; /*Center-align the input text*/
+    padding: 0; /*Remove any extra padding to ensure compact size*/
 }
 
 .list-and-search-wrapper .flex-container {
