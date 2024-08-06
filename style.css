@@ -77,7 +77,7 @@ body img.thumbnail {
 }
 
 .page-buttons input#pageNumber {
-    width: 50px; /*Reduce the width of the page number input*/
+    width: 10px; /*Reduce the width of the page number input*/
     text-align: center; /*Center-align the input text*/
 }
 
