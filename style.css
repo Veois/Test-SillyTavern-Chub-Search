@@ -73,11 +73,11 @@ body img.thumbnail {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 2px;
 }
 
 .page-buttons input#pageNumber {
-    width: 10px; /*Reduce the width of the page number input*/
+    width: 2px; /*Reduce the width of the page number input*/
     text-align: center; /*Center-align the input text*/
 }
 
