@@ -14,8 +14,8 @@ const API_ENDPOINT_SEARCH = "https://api.chub.ai/api/characters/search";
 const API_ENDPOINT_DOWNLOAD = "https://api.chub.ai/api/characters/download";
 
 const defaultSettings = {
-    findCount: 30, // Display 30 cards per page
-    nsfw: true,
+    findCount: 30,
+    nsfw: false,
 };
 
 let chubCharacters = [];
@@ -125,6 +125,10 @@ async function fetchCharactersBySearch(options) {
     return chubCharacters;
 }
 
+function openSearchPopup() {
+    displayCharactersInListViewPopup();
+}
+
 jQuery(async () => {
     $("#external_import_button").after('<button id="search-chub" class="menu_button fa-solid fa-cloud-bolt faSmallFontSquareFix" title="Search CHub for characters"></button>');
     $("#search-chub").on("click", function () {
@@ -132,11 +136,4 @@ jQuery(async () => {
     });
 
     loadSettings();
-});
-
-document.addEventListener('click', function handler() {
-  if (clone) {
-      document.body.removeChild(clone);
-      clone = null;
-  }
 });
