@@ -339,7 +339,7 @@ async function displayCharactersInListViewPopup() {
         <div class="page-buttons flex-container flex-no-wrap flex-align-center">
             <button class="menu_button" id="pageDownButton"><i class="fas fa-chevron-left"></i></button>
             <label for="pageNumber">Page:</label>
-            <input type="number" id="pageNumber" class="text_pole textarea_compact wide4pMinFit" min="1" value="1">
+            <input type="number" id="pageNumber" class="text_pole textarea_compact wide6pMinFit" min="1" value="1">
             <button class="menu_button" id="pageUpButton"><i class="fas fa-chevron-right"></i></button>
         </div>
         <div class="flex-container flex-no-wrap flex-align-center">
