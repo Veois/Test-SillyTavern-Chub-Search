@@ -7,7 +7,7 @@ import {
 import { delay, debounce } from "../../../utils.js";
 import { extension_settings } from "../../../extensions.js";
 
-const extensionName = "SillyTavern-Chub-Search";
+const extensionName = "Test-SillyTavern-Chub-Search";
 const extensionFolderPath = `scripts/extensions/${extensionName}/`;
 
 // Endpoint for API call
