@@ -21,6 +21,7 @@ To use the search, click the thunderbolt icon.
 
 ![image](https://github.com/city-unit/st-chub-search/assets/140349364/a8857619-54df-43f8-b42d-2635d4c5a412)
 
+To update the search results, click "Search"
 
 ## Prerequisites
 
