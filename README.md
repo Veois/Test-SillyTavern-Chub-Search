@@ -5,7 +5,7 @@
 - fix cards download (thanks for this, fork "Fixed-SillyTavern-Chub-Search")
 - limit of 8 tags
 - full card description
-
+## What it is?
 SillyTavern Chub Search is an which provides a quick and easy way to search for new cards from [CHUB](https://www.chub.ai/about) from the comfort of your tavern. 
 
 ![image](https://github.com/city-unit/SillyTavern-Chub-Search/assets/140349364/648e43ae-3ed0-4673-b024-f4ba7846998c)
