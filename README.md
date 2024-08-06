@@ -1,4 +1,4 @@
-# Worked version of SillyTavern Chub Search
+# Working version of SillyTavern Chub Search
 ## What new?
 - 30 char cards on one page
 - fix page switching
